@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
-import heroImage from '../assets/heroimg.jpg';
+import heroImage from '../assets/heroimg_new.jpg';
 import logo from '../assets/traveleye_Logo.png';
 import QuickLinks from '../components/QuickLinks';
 import OurJourney from '../components/OurJourney';

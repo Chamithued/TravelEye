@@ -1,13 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import placeholder from '../assets/hero.png'
-import link1 from '../assets/quicklinks/link1.jpg'
-import link2 from '../assets/quicklinks/link2.jpg'
-import link3 from '../assets/quicklinks/link3.jpg'
+import link1 from '../assets/quicklinks/new_link1.jpg'
+import link2 from '../assets/quicklinks/new_link2.jpg'
+import link3 from '../assets/quicklinks/new_link3.jpg'
 import link4 from '../assets/quicklinks/link4.jpg'
-import link5 from '../assets/quicklinks/link5.jpg'
-import link6 from '../assets/quicklinks/link6.jpg'
-import link7 from '../assets/quicklinks/link7.jpg'
-import link8 from '../assets/quicklinks/link8.jpg'
+import link5 from '../assets/quicklinks/new_link5.jpg'
+import link6 from '../assets/quicklinks/new_link6.jpg'
+import link7 from '../assets/quicklinks/new_link7.jpg'
+import link8 from '../assets/quicklinks/new_link8.jpg'
 
 
 export default function QuickLinks() {
