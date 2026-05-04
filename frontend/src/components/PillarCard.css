@@ -1,0 +1,124 @@
+/* Styles for large image pillar cards */
+.pillar-card {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  color: #fff;
+  min-height: 420px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.pillar-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.52) 100%);
+}
+
+.pillar-badge-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.pillar-badge-icon img { width: 28px; height: 28px; object-fit: contain; }
+
+.pillar-top-badge {
+  position: absolute;
+  top: 16px;
+  left: 86px;
+  z-index: 2;
+  background: rgba(10,132,255,0.12);
+  color: #0a84ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pillar-card-inner {
+  position: relative;
+  z-index: 2;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pillar-card-top {
+  margin-top: 36px;
+}
+
+.pillar-card-title { font-size: 34px; font-weight: 800; margin: 0 0 6px; color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.6); }
+.pillar-card-subtitle { font-size: 16px; color: rgba(255,255,255,0.95); margin-bottom: 18px; }
+.pillar-card-desc { color: rgba(255,255,255,0.95); font-size: 16px; line-height: 1.6; max-width: 640px; }
+
+.pillar-card-actions { display:flex; gap:12px; margin-top: 18px; flex-wrap:wrap; }
+.pillar-card .btn {
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease, border-color 220ms ease;
+  will-change: transform;
+}
+.pillar-card .btn-icon {
+  transition: transform 220ms ease;
+}
+.pillar-card .btn-primary { background: linear-gradient(180deg,#1C4686,#15366a); color: #fff; border-radius: 12px; padding: 12px 18px; text-decoration: none; display:inline-flex; align-items:center; gap:10px; box-shadow: 0 6px 18px rgba(28,70,134,0.28); }
+.pillar-card .btn-outline { background: rgba(255,255,255,0.12); color: #fff; border-radius: 12px; padding: 12px 18px; text-decoration: none; display:inline-flex; align-items:center; gap:10px; border: 1px solid rgba(255,255,255,0.12); }
+
+.pillar-card-date {
+  position: absolute;
+  left: 24px;
+  bottom: 18px;
+  z-index: 2;
+  color: rgba(255,255,255,0.95);
+  font-weight: 700;
+}
+
+.pillar-card { border: 1px solid rgba(12, 66, 134, 0.06); }
+
+@media (hover:hover) {
+  .pillar-card:hover { transform: translateY(-6px); transition: transform 240ms ease; box-shadow: 0 18px 36px rgba(0,0,0,0.18); }
+
+  .pillar-card .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(28,70,134,0.34);
+  }
+
+  .pillar-card .btn-outline:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.34);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .pillar-card .btn:hover .btn-icon {
+    transform: translateX(3px);
+  }
+}
+
+.pillar-card .btn:focus-visible {
+  outline: 2px solid rgba(255,255,255,0.9);
+  outline-offset: 2px;
+}
+
+@media (hover:none) {
+  .pillar-card .btn:active {
+    transform: translateY(1px) scale(0.99);
+  }
+}
+
+@media (max-width: 880px) {
+  .pillar-card { min-height: 360px; }
+  .pillar-card-title { font-size: 28px; }
+  .pillar-card-top { margin-top: 0; }
+}

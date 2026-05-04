@@ -5,6 +5,8 @@ import heroImage from '../assets/heroimg_new.jpg';
 import logo from '../assets/traveleye_Logo.png';
 import QuickLinks from '../components/QuickLinks';
 import RegenerativeTourism from '../components/RegenerativeTourism';
+import WaveDivider from '../components/WaveDivider';
+import FivePillars from '../components/FivePillars';
 import OurJourney from '../components/OurJourney';
 
 export default function Home() {
@@ -125,6 +127,8 @@ export default function Home() {
 			<QuickLinks />
 			<OurJourney />
 			<RegenerativeTourism />
+			<WaveDivider />
+			<FivePillars />
 			{showStickyNav && (
 				<nav className="sticky-nav">
 					<div className="sticky-nav-logo">
