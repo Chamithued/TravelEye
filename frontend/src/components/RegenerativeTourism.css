@@ -1,0 +1,243 @@
+/* Regenerative Tourism Ecosystem Section */
+
+.regenerative-tourism {
+	width: 100%;
+	background: #fff;
+	padding: 80px 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.regenerative-container {
+	max-width: 1400px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+
+.regenerative-left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.eco-tag {
+	display: inline-block;
+	background: rgba(28, 70, 134, 0.12);
+	color: #1C4686;
+	padding: 8px 16px;
+	border-radius: 20px;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	width: fit-content;
+}
+
+.eco-title {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #1a1a1a;
+	margin: 0;
+}
+
+.eco-description {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #666;
+	margin: 0;
+}
+
+.eco-pillars-intro {
+	font-size: 16px;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin: 20px 0 0 0;
+}
+
+.eco-pillars-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.eco-pillar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 14px;
+	border-radius: 10px;
+	background: #fff;
+	border: 1px solid #9cc7ff;
+	box-shadow: 0 3px 10px rgba(28, 70, 134, 0.08);
+	transition: all 0.3s ease;
+}
+
+.eco-pillar:hover {
+	border-color: #5aa2ff;
+	box-shadow: 0 6px 18px rgba(28, 70, 134, 0.12);
+	transform: translateY(-1px);
+}
+
+.pillar-icon {
+	flex: 0 0 46px;
+	width: 46px;
+	height: 46px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+	border-radius: 10px;
+}
+
+/* Ensure any logo images inside pillar icons are consistent size */
+.pillar-icon img,
+.pillar-image {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+	display: block;
+}
+
+.pillar-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	min-width: 0;
+	gap: 4px;
+	flex: 1;
+}
+
+.pillar-icon.pps {
+	background: rgba(33, 150, 243, 0.16);
+}
+
+.pillar-icon.pyet {
+	background: rgba(76, 175, 80, 0.16);
+}
+
+.pillar-icon.ppto {
+	background: rgba(63, 81, 181, 0.16);
+}
+
+.pillar-icon.ppss {
+	background: rgba(255, 152, 0, 0.16);
+}
+
+.pillar-icon.ppfc {
+	background: rgba(229, 57, 53, 0.16);
+}
+
+.pillar-label {
+	font-size: 20px;
+	font-weight: 600;
+	color: #111;
+	letter-spacing: 0;
+	line-height: 1.1;
+}
+
+.pillar-name {
+	font-size: 14px;
+	color: #666;
+	line-height: 1.25;
+	font-weight: 500;
+}
+
+.eco-btn {
+	align-self: flex-start;
+	margin-top: 30px;
+}
+
+.regenerative-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.eco-image-container {
+	width: 100%;
+	height: 500px;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.eco-placeholder-image {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, rgba(8, 181, 174, 0.1) 0%, rgba(8, 181, 174, 0.05) 100%);
+	border: 2px dashed #08b5ae;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.eco-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.placeholder-content {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.placeholder-text {
+	font-size: 24px;
+	font-weight: 600;
+	color: #08b5ae;
+}
+
+.placeholder-subtext {
+	font-size: 14px;
+	color: #999;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.regenerative-container {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+
+	.eco-title {
+		font-size: 32px;
+	}
+
+	.eco-image-container {
+		height: 400px;
+	}
+}
+
+@media (max-width: 768px) {
+	.regenerative-tourism {
+		padding: 60px 24px;
+	}
+
+	.eco-pillars-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.eco-pillar {
+		padding: 12px 14px;
+	}
+
+	.eco-title {
+		font-size: 28px;
+	}
+
+	.eco-image-container {
+		height: 300px;
+	}
+}

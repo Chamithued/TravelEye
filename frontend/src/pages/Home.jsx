@@ -4,6 +4,7 @@ import './Home.css';
 import heroImage from '../assets/heroimg_new.jpg';
 import logo from '../assets/traveleye_Logo.png';
 import QuickLinks from '../components/QuickLinks';
+import RegenerativeTourism from '../components/RegenerativeTourism';
 import OurJourney from '../components/OurJourney';
 
 export default function Home() {
@@ -122,6 +123,8 @@ export default function Home() {
 			</div>
 
 			<QuickLinks />
+			<OurJourney />
+			<RegenerativeTourism />
 			{showStickyNav && (
 				<nav className="sticky-nav">
 					<div className="sticky-nav-logo">
@@ -198,7 +201,6 @@ export default function Home() {
 					</nav>
 				</nav>
 			)}
-			<OurJourney />
 		</div>
 	);
 }
