@@ -1,0 +1,47 @@
+/* Compact tile style similar to attached design */
+.pillar-tile {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 480px;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+
+.tile-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.56) 70%);
+}
+
+.tile-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(255,255,255,0.09);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.tile-content { position: relative; z-index: 3; width: 100%; }
+.tile-title { font-size: 20px; font-weight: 800; margin: 0 0 8px; color: #fff; }
+.tile-excerpt { margin: 0 0 16px; color: rgba(255,255,255,0.92); font-size: 14px; line-height: 1.5; }
+
+.tile-actions { display:flex; gap:10px; align-items:center; }
+.tile-btn { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; border-radius:999px; padding:10px 18px; font-weight:700; }
+.tile-btn.primary { background: #ffc300; color: #1a1a1a; }
+.tile-btn.outline { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.18); }
+
+@media (max-width: 880px) {
+  .pillar-tile { min-height: 380px; padding: 16px; }
+  .tile-title { font-size: 18px; }
+}
