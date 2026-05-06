@@ -24,7 +24,7 @@
 
 .journey-badge {
   display: inline-block;
-  background: #e8f8f7;
+  background: transparent;
   color: #1C4686;
   padding: 8px 18px;
   border-radius: 999px;

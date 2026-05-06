@@ -1,13 +1,13 @@
 /* Regenerative Tourism Ecosystem Section */
 
-.regenerative-tourism {
-	width: 100%;
-	background: #fff;
-	padding: 60px 44px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+	.regenerative-tourism {
+		width: 100%;
+		background: #fff;
+		padding: 16px 44px; /* tightened vertical padding */
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
 .regenerative-container {
 	max-width: 1400px;
