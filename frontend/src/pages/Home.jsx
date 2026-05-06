@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './Home.css';
 import heroImage from '../assets/heroimg_new.jpg';
 import logo from '../assets/traveleye_Logo.png';
@@ -7,7 +6,9 @@ import QuickLinks from '../components/QuickLinks';
 import RegenerativeTourism from '../components/RegenerativeTourism';
 import WaveDivider from '../components/WaveDivider';
 import FivePillars from '../components/FivePillars';
+import GetInvolvedSection from '../components/GetInvolvedSection';
 import OurJourney from '../components/OurJourney';
+import OurGrowingImpact from '../components/OurGrowingImpact';
 
 export default function Home() {
 	const [showStickyNav, setShowStickyNav] = React.useState(false);
@@ -129,6 +130,8 @@ export default function Home() {
 			<RegenerativeTourism />
 			<WaveDivider />
 			<FivePillars />
+			<GetInvolvedSection />
+			<OurGrowingImpact />
 			{showStickyNav && (
 				<nav className="sticky-nav">
 					<div className="sticky-nav-logo">
