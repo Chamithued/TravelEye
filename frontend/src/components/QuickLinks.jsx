@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import placeholder from '../assets/hero.png'
-import link1 from '../assets/quicklinks/new_link1.jpg'
+import link1 from '../assets/clientimages/Stays.png'
 import link2 from '../assets/quicklinks/new_link2.jpg'
 import link3 from '../assets/quicklinks/new_link3.jpg'
 import link4 from '../assets/quicklinks/link4.jpg'
