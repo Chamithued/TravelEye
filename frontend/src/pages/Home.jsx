@@ -9,6 +9,7 @@ import FivePillars from '../components/FivePillars';
 import GetInvolvedSection from '../components/GetInvolvedSection';
 import OurJourney from '../components/OurJourney';
 import OurGrowingImpact from '../components/OurGrowingImpact';
+import Footer from '../components/Partners';
 
 export default function Home() {
 	const [showStickyNav, setShowStickyNav] = React.useState(false);
@@ -106,15 +107,15 @@ export default function Home() {
 
 					<section className="hero-main">
 					<div className="hero-left">
-						<div className="eyebrow">BEST TRAVEL AGENCY</div>
+						<div className="eyebrow">Tourism for People, Planet, and Prosperity</div>
 						<h1 className="big-title">TravelEye</h1>
 						<h2 className="subtitle">Alliance Sri Lanka</h2>
-						<p className="lead">Building a People-Powered Tourism Ecosystem for Sri Lanka</p>
+						<h3>Since 2006</h3>
+						{/* <p className="lead">Building a People-Powered Tourism Ecosystem for Sri Lanka</p> */}
+						<h4>Building a People-Powered Tourism Ecosystem for Sri Lanka</h4>
+						<h4>Co-created with local people — strengthening tourism enterprises, destinations, and value chains nationwide.</h4>
 
-						<div className="hero-ctas">
-							<button className="btn btn-primary">Discover</button>
-							<button className="btn btn-outline">Know More</button>
-						</div>
+
 					</div>
 
 					<div className="hero-right">
@@ -208,6 +209,7 @@ export default function Home() {
 					</nav>
 				</nav>
 			)}
+			<Footer />
 		</div>
 	);
 }

@@ -59,10 +59,10 @@
 .get-involved-title {
   margin: 28px 0 0;
   color: #14254a;
-  font-size: clamp(42px, 4.2vw, 68px);
-  line-height: 1.05;
+  font-size: clamp(42px, 4.2vw, 55px);
+  line-height: 1.3;
   letter-spacing: -0.04em;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .get-involved-subtitle {
