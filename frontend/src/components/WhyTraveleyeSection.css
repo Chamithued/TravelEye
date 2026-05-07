@@ -1,0 +1,200 @@
+.why-traveleye-section {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 120px auto 0;
+  padding: 20px 22px 60px;
+  text-align: center;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.why-traveleye-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #dfe8f3;
+  color: #1c4686;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.why-traveleye-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: clamp(1.875rem, 3.4vw, 2.625rem);
+  line-height: 1.12;
+  color: #1d2745;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.why-traveleye-subtitle {
+  max-width: 940px;
+  margin: 18px auto 0;
+  color: #5f7394;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.why-traveleye-grid {
+  margin: 34px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 18px;
+  width: min(1200px, 100%);
+}
+
+.why-traveleye-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 18px 18px 14px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid rgba(88, 146, 223, 0.35);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(52, 96, 157, 0.12);
+  min-height: 130px;
+  transition: box-shadow 300ms ease;
+}
+
+.why-traveleye-card:hover {
+  box-shadow: 0 8px 24px rgba(52, 96, 157, 0.18);
+}
+
+.why-traveleye-icon {
+  flex: 0 0 auto;
+  width: clamp(40px, 6vw, 52px);
+  height: clamp(40px, 6vw, 52px);
+  border-radius: 12px;
+  background: #e8ecf3;
+  border: 2px solid #a8b8d0;
+  color: #1c4686;
+  display: grid;
+  place-items: center;
+  font-size: clamp(18px, 2.2vw, 24px);
+  opacity: 1;
+  transition: all 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.why-traveleye-icon span {
+  display: inline-block;
+  transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1), filter 320ms ease;
+}
+
+.why-traveleye-card:hover .why-traveleye-icon {
+  background: linear-gradient(180deg, #13c37e 0%, #10aa70 100%);
+  border-color: #0d8f5a;
+  opacity: 1;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 20px rgba(19, 195, 126, 0.6);
+  animation: iconGlow 700ms ease-out;
+}
+
+.why-traveleye-card:hover .why-traveleye-icon span {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.45));
+}
+
+.why-traveleye-card-body h3 {
+  margin: 2px 0 6px;
+  font-size: 1.3125rem;
+  line-height: 1.2;
+  color: #111111;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.why-traveleye-card-body p {
+  margin: 0;
+  color: #4d5f77;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.why-traveleye-cta-wrap {
+  margin-top: 36px;
+  background: transparent;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.why-traveleye-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: clamp(220px, 40%, 352px);
+  padding: 14px 24px;
+  border-radius: 12px;
+  background: #1c4686;
+  color: #fff;
+  font-size: clamp(14px, 1.6vw, 18px);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(28, 70, 134, 0.24);
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.why-traveleye-cta:hover {
+  transform: translateY(-1px);
+  background: #173c73;
+  box-shadow: 0 12px 24px rgba(28, 70, 134, 0.28);
+}
+
+.why-traveleye-cta:focus-visible {
+  outline: 3px solid rgba(28, 70, 134, 0.28);
+  outline-offset: 3px;
+}
+
+@keyframes iconGlow {
+  0% {
+    transform: scale(1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 0px rgba(19, 195, 126, 0.3);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 20px rgba(19, 195, 126, 0.6);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 16px rgba(19, 195, 126, 0.5);
+  }
+}
+
+@media (max-width: 880px) {
+  .why-traveleye-section {
+    margin-top: 96px;
+    padding: 18px 0 0;
+  }
+
+  .why-traveleye-subtitle {
+    font-size: 1rem;
+  }
+
+  .why-traveleye-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .why-traveleye-card {
+    min-height: auto;
+  }
+
+  .why-traveleye-cta {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 881px) and (max-width: 1200px) {
+  .why-traveleye-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
