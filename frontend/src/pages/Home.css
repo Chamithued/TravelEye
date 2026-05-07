@@ -338,7 +338,8 @@
 .quick-link-card{flex:0 0 180px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;background:#fff;border-radius:12px;text-decoration:none;color:inherit;box-shadow:0 6px 18px rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.04)}
 .quick-link-icon{font-size:32px;margin-bottom:10px}
 .quick-link-title{font-weight:700;text-align:center}
-.ql-arrow{background:#fff;border:1px solid rgba(0,0,0,0.08);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 12px;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+.ql-arrow{background:#000;border:1px solid #000;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);font-weight:800;font-size:24px;line-height:1}
+.ql-arrow:hover,.ql-arrow:focus,.ql-arrow:active{background:#000;border-color:#000;color:#fff}
 .ql-left{order:0}
 .ql-right{order:2}
 

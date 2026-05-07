@@ -14,43 +14,11 @@ import new_pillar2 from '../assets/pillars/new_pillar2.jpg'
 import new_pillar3 from '../assets/pillars/new_pillar3.jpg'
 import new_pillar4 from '../assets/pillars/new_pillar4.jpg'
 import new_pillar5 from '../assets/pillars/new_pillar5.jpg'
+import WhyTraveleyeSection from './WhyTraveleyeSection'
 
 export default function FivePillars() {
   const sectionRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
-
-  const whyCards = [
-    {
-      icon: '🌱',
-      title: 'People-Powered',
-      description: 'Co-owned, co-created, and co-managed by local people, communities, youth entrepreneurs, and experts.'
-    },
-    {
-      icon: '🌍',
-      title: 'Regenerative Impact',
-      description: 'Experiences that restore ecosystems, preserve heritage, and uplift local livelihoods.'
-    },
-    {
-      icon: '🏡',
-      title: 'Authentic Experiences',
-      description: 'Go beyond the guidebook into living villages, traditions, and real stories.'
-    },
-    {
-      icon: '🤝',
-      title: 'Innovative Partnerships',
-      description: 'Collaboration and shared ownership that replace traditional hierarchies.'
-    },
-    {
-      icon: '♻️',
-      title: 'Inclusive & Sustainable',
-      description: 'Empowering women, youth, and rural communities through equitable tourism ventures.'
-    },
-    {
-      icon: '📍',
-      title: 'Island-Wide Reach',
-      description: 'Our People-Powered Facilitation Centers connect travelers, operators, and local experiences seamlessly across Sri Lanka.'
-    }
-  ]
 
   useEffect(() => {
     const node = sectionRef.current
@@ -149,35 +117,7 @@ export default function FivePillars() {
           />
         </div>
 
-        <section className="why-traveleye-section" aria-labelledby="why-traveleye-title">
-          <div className="why-traveleye-badge">Why Traveleye</div>
-          <h2 id="why-traveleye-title" className="why-traveleye-title">
-            Because Sri Lanka needs a People-Powered Tourism Ecosystem - not another tour operator
-          </h2>
-          <p className="why-traveleye-subtitle">
-            Transforming travel into a shared journey that creates value for People, Planet, and Prosperity.
-          </p>
-
-          <div className="why-traveleye-grid">
-            {whyCards.map((card) => (
-              <article key={card.title} className="why-traveleye-card">
-                <div className="why-traveleye-icon" aria-hidden="true">
-                  <span>{card.icon}</span>
-                </div>
-                <div className="why-traveleye-card-body">
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="why-traveleye-cta-wrap">
-            <a className="why-traveleye-cta" href="#">
-              Discover More Why Traveleye?
-            </a>
-          </div>
-        </section>
+        <WhyTraveleyeSection />
       </div>
     </section>
   )
