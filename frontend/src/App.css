@@ -1,5 +1,5 @@
 .counter {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 5px 10px;
   border-radius: 5px;
   color: var(--accent);
@@ -15,6 +15,28 @@
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
+}
+
+/* Global responsive variables and helpers */
+:root {
+  --container-max: 1200px;
+  --gutter: 24px;
+  --bp-sm: 480px;
+  --bp-md: 880px;
+  --bp-lg: 1200px;
+}
+
+html {
+  /* responsive base font-size (scales between 14px and 18px) */
+  font-size: clamp(14px, 1.2vw, 18px);
+}
+
+.container {
+  width: min(var(--container-max), 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 .hero {
@@ -117,7 +139,7 @@
 
   a {
     color: var(--text-h);
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 6px;
     background: var(--social-bg);
     display: flex;

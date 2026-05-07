@@ -50,7 +50,7 @@
   border-radius: 999px;
   background: rgba(28, 70, 134, 0.13);
   color: #1c4686;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 800;
   line-height: 1;
   box-shadow: 0 6px 16px rgba(28, 70, 134, 0.08);
@@ -181,7 +181,7 @@
   padding: 8px 14px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   backdrop-filter: blur(6px);
 }
@@ -194,7 +194,7 @@
   margin: 0;
   padding: 0 2px;
   color: rgba(255, 255, 255, 0.96);
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 1.45;
   font-weight: 600;
   text-align: left;
@@ -212,7 +212,7 @@
   display: block;
   line-height: 1.05;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .property-card:hover .property-card-description {
@@ -222,7 +222,7 @@
 .property-card-topic .topic-inbound {
   display: block;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.05;
   margin-top: 4px;
   white-space: normal; /* allow wrapping to its own line */
@@ -246,7 +246,7 @@
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.92);
@@ -256,7 +256,7 @@
 }
 
 .property-card-btn:hover {
-  background: #000;
+  background: #1C4686;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 10px 24px rgba(0,0,0,0.28);
@@ -288,7 +288,7 @@
   }
 
   .price-amount {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
@@ -299,7 +299,7 @@
   }
 
   .get-involved-badge {
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding: 9px 18px;
   }
 
@@ -310,7 +310,7 @@
 
   .get-involved-subtitle {
     margin-top: 18px;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -339,7 +339,7 @@
   .toggle-btn {
     width: 28px;
     height: 28px;
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .property-card-price {
@@ -347,10 +347,10 @@
   }
 
   .price-label {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .price-amount {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }

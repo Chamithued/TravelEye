@@ -28,13 +28,13 @@
   color: #1C4686;
   padding: 8px 18px;
   border-radius: 999px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
 .journey-title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 900;
   color: #1a1a1a;
   margin: 16px 0;
@@ -45,14 +45,14 @@
 }
 
 .journey-subtitle {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: #1C4686;
   margin: 12px 0 24px;
 }
 
 .journey-intro {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
   line-height: 1.8;
   margin: 12px 0;
@@ -113,13 +113,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+  font-size: 1.75rem;
   margin-bottom: 12px;
   box-shadow: 0 8px 20px rgba(28, 70, 134, 0.18);
 }
 
 .timeline-year {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #1C4686;
 }
@@ -141,14 +141,14 @@
 }
 
 .timeline-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 800;
   color: #1a1a1a;
   margin: 0 0 12px 0;
 }
 
 .timeline-desc {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #555;
   line-height: 1.7;
   margin: 0;
@@ -160,7 +160,7 @@
 }
 
 .journey-quote p {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #1a1a1a;
   font-style: italic;
@@ -175,13 +175,13 @@
   padding: 12px 32px;
   border-radius: 6px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875rem;
   cursor: pointer;
   transition: background 250ms ease, transform 200ms ease;
 }
 
 .journey-btn:hover {
-  background: #1e3f6f;
+  background: #1C4686;
   transform: translateY(-2px);
 }
 
@@ -192,7 +192,7 @@
   }
 
   .journey-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 
   .journey-timeline::before {
@@ -218,13 +218,13 @@
     margin-bottom: 0;
     width: 48px;
     height: 48px;
-    font-size: 24px;
+    font-size: 1.5rem;
     order: 2;
   }
 
   .timeline-year {
     order: 1;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .timeline-content {
@@ -240,6 +240,6 @@
   }
 
   .journey-quote p {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }

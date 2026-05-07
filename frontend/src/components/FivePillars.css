@@ -4,14 +4,15 @@
   padding: 16px 44px; /* tightened further */
   background: #ffffff; /* overall section white */
   text-align: center;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 800ms ease, transform 800ms ease;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 .five-pillars-visible {
+  /* kept for compatibility with JS that toggles the class */
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .five-pillars-container {
@@ -31,13 +32,13 @@
   padding: 8px 18px;
   border-radius: 20px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
   margin-bottom: 16px;
 }
 
 .pillars-title {
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 600;
   color: #1a1a1a;
   margin: 16px 0;
@@ -45,7 +46,7 @@
 }
 
 .pillars-subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #5a7b9a;
   margin: 12px 0 0 0;
@@ -56,7 +57,7 @@
 }
 
 .pillars-text {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
   line-height: 1.8;
   margin: 16px 0;
@@ -141,15 +142,15 @@
   }
 
   .pillars-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .pillars-subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .pillars-text {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
 
 }

@@ -54,7 +54,7 @@
 }
 
 .hero-logo img{
-  height:60px;
+  height: clamp(40px, 3.5vw, 60px);
   width:auto;
   object-fit:contain;
 }
@@ -152,7 +152,7 @@
   text-decoration: none;
   opacity: 0.95;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
   display: inline-block;
   padding: 6px 0;
   position: relative;
@@ -160,7 +160,7 @@
 
 .sticky-nav .nav-link::after {
   content: '▼';
-  font-size: 9px;
+  font-size: 0.5625rem;
   margin-left: 6px;
   opacity: 0.7;
 }
@@ -194,7 +194,7 @@
   text-decoration: none;
   padding: 10px 18px;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 0.8125rem;
   transition: background 0.2s ease;
 }
 
@@ -208,14 +208,14 @@
 }
 
 .hero-right-controls{display:flex;align-items:center;gap:16px}
-.hero-search{padding:12px 18px;border-radius:999px;border:none;min-width:250px;outline:none;box-shadow:0 8px 18px rgba(0,0,0,0.08) inset}
-.hero-login{background:#12bdbd;color:#fff;padding:12px 18px;border-radius:999px;border:none;display:flex;align-items:center;gap:10px;font-weight:700;min-width:148px;justify-content:center}
+.hero-search{padding:12px 18px;border-radius:999px;border:none;min-width:clamp(160px,25vw,320px);outline:none;box-shadow:0 8px 18px rgba(0,0,0,0.08) inset}
+.hero-login{background:#12bdbd;color:#fff;padding:12px 18px;border-radius:999px;border:none;display:flex;align-items:center;gap:10px;font-weight:700;min-width:clamp(120px,18vw,148px);justify-content:center}
 
 .hero-main{display:flex;align-items:stretch;background:transparent;flex:1;position:relative}
-.hero-left{flex:0 0 56%;padding:112px 56px 64px;background:transparent;color:#fff;position:relative;z-index:2}
+.hero-left{flex:0 0 56%;padding: clamp(24px, 6vw, 112px) clamp(16px,4vw,56px) clamp(16px,4vw,64px);background:transparent;color:#fff;position:relative;z-index:2}
 .eyebrow{font-weight:700;letter-spacing:1px;margin-bottom:12px}
-.big-title{font-size:132px;margin:0;line-height:0.88;opacity:0.92;font-weight:900;letter-spacing:-2px}
-.subtitle{font-size:44px;margin:10px 0 16px;font-weight:900;line-height:1}
+.big-title{font-size: clamp(48px, 8vw, 132px);margin:0;line-height:0.88;opacity:0.92;font-weight:900;letter-spacing:-2px}
+.subtitle{font-size: clamp(20px, 3.5vw, 44px);margin:10px 0 16px;font-weight:900;line-height:1}
 .lead{max-width:420px;opacity:0.9;line-height:1.8;font-size:13px}
 .hero-ctas{margin-top:28px;display:flex;gap:14px}
 .btn{padding:12px 26px;border-radius:2px;border:2px solid rgba(255,255,255,0.95);cursor:pointer;font-weight:700;min-width:160px;height:42px}
@@ -274,7 +274,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
   opacity: 0.8;
   z-index: 10;
@@ -295,7 +295,7 @@
 
 .quick-links-heading {
   display: inline-block;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #1C4686;
   background: transparent;
@@ -338,8 +338,8 @@
 .quick-link-card{flex:0 0 180px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;background:#fff;border-radius:12px;text-decoration:none;color:inherit;box-shadow:0 6px 18px rgba(0,0,0,0.06);border:1px solid rgba(0,0,0,0.04)}
 .quick-link-icon{font-size:32px;margin-bottom:10px}
 .quick-link-title{font-weight:700;text-align:center}
-.ql-arrow{background:#000;border:1px solid #000;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);font-weight:800;font-size:24px;line-height:1}
-.ql-arrow:hover,.ql-arrow:focus,.ql-arrow:active{background:#000;border-color:#000;color:#fff}
+.ql-arrow{background:#1C4686;border:1px solid #1C4686;color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;margin:0 12px;box-shadow:0 8px 20px rgba(0,0,0,0.08);font-weight:800;font-size:24px;line-height:1}
+.ql-arrow:hover,.ql-arrow:focus,.ql-arrow:active{background:#154064;border-color:#154064;color:#fff}
 .ql-left{order:0}
 .ql-right{order:2}
 

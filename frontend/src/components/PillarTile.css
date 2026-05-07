@@ -29,12 +29,12 @@
   padding: 8px 12px;
   border-radius: 8px;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .tile-content { position: relative; z-index: 3; width: 100%; }
-.tile-title { font-size: 20px; font-weight: 800; margin: 0 0 8px; color: #fff; }
-.tile-excerpt { margin: 0 0 16px; color: rgba(255,255,255,0.92); font-size: 14px; line-height: 1.5; }
+.tile-title { font-size: 1.25rem; font-weight: 800; margin: 0 0 8px; color: #fff; }
+.tile-excerpt { margin: 0 0 16px; color: rgba(255,255,255,0.92); font-size: 0.875rem; line-height: 1.5; }
 
 .tile-actions { display:flex; gap:10px; align-items:center; }
 .tile-btn { display:inline-flex; align-items:center; justify-content:center; text-decoration:none; border-radius:999px; padding:10px 18px; font-weight:700; }
@@ -43,5 +43,5 @@
 
 @media (max-width: 880px) {
   .pillar-tile { min-height: 380px; padding: 16px; }
-  .tile-title { font-size: 18px; }
+  .tile-title { font-size: 1.125rem; }
 }

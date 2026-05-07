@@ -42,7 +42,7 @@
   color: #0a84ff;
   padding: 6px 12px;
   border-radius: 12px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 700;
 }
 
@@ -60,9 +60,9 @@
   margin-top: 36px;
 }
 
-.pillar-card-title { font-size: 34px; font-weight: 800; margin: 0 0 6px; color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.6); }
-.pillar-card-subtitle { font-size: 16px; color: rgba(255,255,255,0.95); margin-bottom: 18px; }
-.pillar-card-desc { color: rgba(255,255,255,0.95); font-size: 16px; line-height: 1.6; max-width: 640px; }
+.pillar-card-title { font-size: 2.125rem; font-weight: 800; margin: 0 0 6px; color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.6); }
+.pillar-card-subtitle { font-size: 1rem; color: rgba(255,255,255,0.95); margin-bottom: 18px; }
+.pillar-card-desc { color: rgba(255,255,255,0.95); font-size: 1rem; line-height: 1.6; max-width: 640px; }
 
 .pillar-card-actions { display:flex; gap:12px; margin-top: 18px; flex-wrap:wrap; }
 .pillar-card .btn {
@@ -119,6 +119,6 @@
 
 @media (max-width: 880px) {
   .pillar-card { min-height: 360px; }
-  .pillar-card-title { font-size: 28px; }
+  .pillar-card-title { font-size: 1.75rem; }
   .pillar-card-top { margin-top: 0; }
 }
