@@ -4,16 +4,17 @@ import PillarCard from './PillarCard'
 import heroImg from '../assets/heroimg_new.jpg'
 import peopleImg from '../assets/people_powered.png'
 import mountainImg from '../assets/heroimg_new.jpg'
-import logo1 from '../assets/logo1.jpeg'
-import logo2 from '../assets/logo2.png'
-import logo3 from '../assets/logo3.png'
-import logo4 from '../assets/logo4.png'
-import logo5 from '../assets/logo5.jpeg'
+import logo1 from '../assets/logos/04.png'
+import logo2 from '../assets/logos/03.png'
+import logo3 from '../assets/logos/01.png'
+import logo4 from '../assets/logos/02.png'
+import logo5 from '../assets/logos/05.png'
 import new_pillar1 from '../assets/pillars/new_pillar1.jpg'
 import new_pillar2 from '../assets/pillars/new_pillar2.jpg'
 import new_pillar3 from '../assets/pillars/new_pillar3.jpg'
 import new_pillar4 from '../assets/pillars/new_pillar4.jpg'
 import new_pillar5 from '../assets/pillars/new_pillar5.jpg'
+import FeaturedJourneySection from './FeaturedJourneySection'
 import WhyTraveleyeSection from './WhyTraveleyeSection'
 
 export default function FivePillars() {
@@ -116,6 +117,8 @@ export default function FivePillars() {
             buttons={[{ label: 'Learn About PPFC Model', href: '#', variant: 'primary', icon: true }, { label: 'Co-Own a Facilitation Center', href: '#', variant: 'outline', icon: true }]}
           />
         </div>
+
+        <FeaturedJourneySection />
 
         <WhyTraveleyeSection />
       </div>

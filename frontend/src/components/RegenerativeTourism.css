@@ -3,7 +3,7 @@
 	.regenerative-tourism {
 		width: 100%;
 		background: #fff;
-		padding: 16px 44px; /* tightened vertical padding */
+		padding: 0 44px; /* remove vertical padding to tighten spacing */
 		display: flex;
 		align-items: center;
 		justify-content: center;

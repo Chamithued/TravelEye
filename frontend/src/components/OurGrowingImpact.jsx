@@ -28,12 +28,13 @@ const impactTargets = impactItems.map((item) => Number.parseInt(item.value, 10) 
 
 export default function OurGrowingImpact() {
   const sectionRef = useRef(null)
+  const headingRef = useRef(null)
   const [hasAnimated, setHasAnimated] = useState(false)
   const [displayValues, setDisplayValues] = useState(impactTargets.map(() => 0))
 
   useEffect(() => {
-    const node = sectionRef.current
-    if (!node) return
+    const target = headingRef.current || sectionRef.current
+    if (!target) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -42,17 +43,18 @@ export default function OurGrowingImpact() {
           observer.disconnect()
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.1 }
     )
 
-    observer.observe(node)
+    observer.observe(target)
+
     return () => observer.disconnect()
   }, [])
 
   useEffect(() => {
     if (!hasAnimated) return
 
-    const durationMs = 1050
+    const durationMs = 3000
     let startTime = null
     let frameId = null
 
@@ -79,7 +81,7 @@ export default function OurGrowingImpact() {
     <section ref={sectionRef} className="growing-impact-section" aria-labelledby="growing-impact-title">
       <div className="growing-impact-container">
         <span className="growing-impact-badge">🌱 Our Growing Impact</span>
-        <h2 id="growing-impact-title" className="growing-impact-title">Our Growing Impact</h2>
+        <h2 id="growing-impact-title" ref={headingRef} className="growing-impact-title">Our Growing Impact</h2>
         <p className="growing-impact-subtitle">
           Real numbers that reflect our commitment to people, planet, and prosperity.
         </p>

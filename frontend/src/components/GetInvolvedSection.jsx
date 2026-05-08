@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import './GetInvolvedSection.css'
-import card1 from '../assets/quicklinks/new_link1.jpg'
-import card2 from '../assets/quicklinks/new_link2.jpg'
+import card1 from '../assets/journeymatters/journey1.jpg'
+import card2 from '../assets/journeymatters/journey2.jpg'
 import card3 from '../assets/quicklinks/new_link3.jpg'
 import card4 from '../assets/quicklinks/new_link7.jpg'
 import card5 from '../assets/quicklinks/new_link8.jpg'
-import card6 from '../assets/quicklinks/new_link5.jpg'
-import logoMain from '../assets/logo1.jpeg'
+import logoMain from '../assets/logos/09.png'
 
 export default function GetInvolvedSection() {
   const sectionRef = useRef(null)
@@ -17,8 +16,7 @@ export default function GetInvolvedSection() {
     { id: 2, price: '$3,200', image: card2 },
     { id: 3, price: '$5,800', image: card3 },
     { id: 4, price: '$2,900', image: card4 },
-    { id: 5, price: '$4,100', image: card5 },
-    { id: 6, price: '$3,600', image: card6 }
+    { id: 5, price: '$4,100', image: card5 }
   ]
 
   useEffect(() => {
@@ -126,14 +124,6 @@ export default function GetInvolvedSection() {
                   </div>
                   <p className="property-card-description property-card-description-secondary">
                     Contribute to initiatives <br/>that empower women, <br/>youth, and local<br/> enterprises through<br/> meaningful tourism <br/>experiences.
-                  </p>
-                </>
-              )}
-            {card.id === 6 && (
-                <>
-                  <div className="property-card-topic">Collaborate With Us</div>
-                  <p className="property-card-description">
-                    People-powered tourism shaping a more inclusive and regenerative future for Sri Lanka.
                   </p>
                 </>
               )}
