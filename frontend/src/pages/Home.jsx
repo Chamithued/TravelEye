@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import heroImage from '../assets/heroimg_new.jpg';
+import heroImage from '../assets/clientimages/heroclient.png';
 import logo from '../assets/traveleye_Logo.png';
 import QuickLinks from '../components/QuickLinks';
 import RegenerativeTourism from '../components/RegenerativeTourism';
