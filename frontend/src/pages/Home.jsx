@@ -5,7 +5,7 @@ import logo from '../assets/traveleye_Logo.png';
 import QuickLinks from '../components/QuickLinks';
 import RegenerativeTourism from '../components/RegenerativeTourism';
 import WaveDivider from '../components/WaveDivider';
-import FivePillars from '../components/FivePillars';
+import FeaturedJourneySection from '../components/FeaturedJourneySection';
 import GetInvolvedSection from '../components/GetInvolvedSection';
 import OurJourney from '../components/OurJourney';
 import OurGrowingImpact from '../components/OurGrowingImpact';
@@ -130,7 +130,7 @@ export default function Home() {
 			<OurJourney />
 			<RegenerativeTourism />
 			<WaveDivider />
-			<FivePillars />
+			<FeaturedJourneySection />
 			<GetInvolvedSection />
 			<OurGrowingImpact />
 			{showStickyNav && (

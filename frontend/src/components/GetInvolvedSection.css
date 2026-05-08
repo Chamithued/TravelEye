@@ -79,11 +79,10 @@
   max-width: 1400px;
   margin: 56px auto 0;
   padding: 0 80px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   align-items: stretch;
-  justify-content: center;
-  gap: 0;
+  gap: 20px;
   list-style: none;
   overflow: visible;
   isolation: isolate;
@@ -92,15 +91,13 @@
 .property-card {
   position: relative;
   box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   min-width: 0;
-  max-width: 320px;
-  margin-left: -48px;
   border-radius: 16px;
   overflow: hidden;
   background-position: center;
   background-size: cover;
-  height: clamp(420px, 27.5vw, 526px);
+  height: clamp(380px, 25vw, 500px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,10 +110,6 @@
   transform: translateY(24px);
   transition: opacity 700ms ease, transform 700ms ease, box-shadow 300ms ease, z-index 0ms ease;
   z-index: 1;
-}
-
-.property-card:first-child {
-  margin-left: 0;
 }
 
 .property-card {
@@ -279,8 +272,9 @@
 
 @media (max-width: 1200px) {
   .property-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
+    padding: 0 32px;
   }
 
   .property-card {
@@ -316,14 +310,28 @@
 
   .property-cards-grid {
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
+    padding: 0 12px;
     margin-top: 34px;
   }
 
   .property-card {
     height: 340px;
     padding: 14px;
+  }
+
+  .property-card-topic {
+    top: 58px;
+    left: 8px;
+    font-size: 0.9375rem;
+  }
+
+  .property-card-description {
+    top: 108px;
+    left: 8px;
+    max-width: 210px;
+    font-size: 0.875rem;
   }
 
   .get-involved-quote {
@@ -352,5 +360,12 @@
 
   .price-amount {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .property-cards-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
   }
 }
