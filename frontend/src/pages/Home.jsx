@@ -6,6 +6,7 @@ import QuickLinks from '../components/QuickLinks';
 import RegenerativeTourism from '../components/RegenerativeTourism';
 import WaveDivider from '../components/WaveDivider';
 import FeaturedJourneySection from '../components/FeaturedJourneySection';
+import WhyTraveleyeSection from '../components/WhyTraveleyeSection';
 import GetInvolvedSection from '../components/GetInvolvedSection';
 import OurJourney from '../components/OurJourney';
 import OurGrowingImpact from '../components/OurGrowingImpact';
@@ -131,6 +132,7 @@ export default function Home() {
 			<RegenerativeTourism />
 			<WaveDivider />
 			<FeaturedJourneySection />
+			<WhyTraveleyeSection />
 			<GetInvolvedSection />
 			<OurGrowingImpact />
 			{showStickyNav && (
